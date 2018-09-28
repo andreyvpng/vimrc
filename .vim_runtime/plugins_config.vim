@@ -142,6 +142,13 @@ map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
+" => css-color
+""""""""""""""""""""""""""""""
+
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+
+""""""""""""""""""""""""""""""
 " => Emmet
 """"""""""""""""""""""""""""""
 

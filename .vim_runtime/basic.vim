@@ -33,12 +33,12 @@ set showmatch
 " Tab settings
 set autoindent
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 " Show numbers of lines
-set number
+set nonumber
 
 " wrap
 set wrap
