@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'cocopon/iceberg.vim'
 
 " Project navigation
 Plug 'scrooloose/nerdtree'
@@ -47,6 +48,7 @@ Plug 'xolox/vim-misc'
 Plug 'amix/open_file_under_cursor.vim'
 Plug 'diepm/vim-rest-console'
 Plug 'greyblake/vim-preview'
+Plug 'soywod/phonetics.vim'
 
 call plug#end()
 
@@ -56,7 +58,7 @@ call plug#end()
 """"""""""""""""""""""""""""""
 
 let base16colorspace=256
-colorscheme gruvbox
+colorscheme iceberg
 
 
 """"""""""""""""""""""""""""""
@@ -64,7 +66,7 @@ colorscheme gruvbox
 """"""""""""""""""""""""""""""
 
 let g:lightline = {
-    \ 'colorscheme': 'seoul256',
+    \ 'colorscheme': 'iceberg',
     \ 'active': {
     \   'left': [ ['mode', 'paste'],
     \             ['fugitive', 'readonly', 'filename', 'modified'] ],
@@ -247,3 +249,14 @@ nnoremap <leader>ss :SessionSave<cr>
 let g:session_autosave="yes"
 let g:session_autoload="no"
 let g:session_command_aliases = 1
+
+
+""""""""""""""""""""""""""""""
+" => phonetics
+""""""""""""""""""""""""""""""
+
+nnoremap <leader>ph :Phonetics american<cr>
+nnoremap <leader>pp :PhoneticsPlay american<cr>
+
+let g:phonetics_default_accent = 'american | british'
+
