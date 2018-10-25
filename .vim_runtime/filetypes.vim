@@ -56,3 +56,10 @@ fun! SetAppDir()
         return ''
     endif
 endfun
+
+
+""""""""""""""""""""""""""""""
+" => C++
+""""""""""""""""""""""""""""""
+
+nnoremap <F5> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out<CR>

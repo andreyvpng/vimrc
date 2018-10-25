@@ -5,6 +5,7 @@ Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'cocopon/iceberg.vim'
+Plug 'mhinz/vim-startify'
 
 " Project navigation
 Plug 'scrooloose/nerdtree'
@@ -13,11 +14,18 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/mru.vim'
 Plug 'vim-scripts/bufexplorer.zip'
 
+" Organize
+Plug 'mrtazz/vim-plan'
+Plug 'elentok/plaintasks.vim'
+
 " HTML
 Plug 'mattn/emmet-vim'
 
 " CSS
 Plug 'skammer/vim-css-color'
+
+" JS
+Plug 'pangloss/vim-javascript'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -144,10 +152,34 @@ map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
+" => vim-plan
+""""""""""""""""""""""""""""""
+
+nnoremap <leader>pw :OpenWeekPlan<CR>
+noremap <leader>pm :OpenMonthPlan<CR>
+noremap <leader>py :OpenYearPlan<CR>
+noremap <leader>pd :Today<CR>
+
+
+""""""""""""""""""""""""""""""
+" => plaintasks.vim
+""""""""""""""""""""""""""""""
+
+autocmd BufNewFile,BufReadPost *.md set filetype=plaintasks
+
+
+""""""""""""""""""""""""""""""
 " => css-color
 """"""""""""""""""""""""""""""
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+
+""""""""""""""""""""""""""""""
+" => vim-javascript
+""""""""""""""""""""""""""""""
+
+let g:javascript_plugin_flow = 1
 
 
 """"""""""""""""""""""""""""""
@@ -184,6 +216,7 @@ nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
 \   'python': ['flake8'],
+\ 	'javascript': ['eslint', 'flow'],
 \}
 
 let g:ale_sign_error = '>>'
