@@ -26,6 +26,7 @@ Plug 'skammer/vim-css-color'
 
 " JS
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -66,7 +67,7 @@ call plug#end()
 """"""""""""""""""""""""""""""
 
 let base16colorspace=256
-colorscheme iceberg
+colorscheme gruvbox
 
 
 """"""""""""""""""""""""""""""
@@ -74,7 +75,7 @@ colorscheme iceberg
 """"""""""""""""""""""""""""""
 
 let g:lightline = {
-    \ 'colorscheme': 'iceberg',
+    \ 'colorscheme': 'wombat',
     \ 'active': {
     \   'left': [ ['mode', 'paste'],
     \             ['fugitive', 'readonly', 'filename', 'modified'] ],
@@ -292,4 +293,3 @@ nnoremap <leader>ph :Phonetics american<cr>
 nnoremap <leader>pp :PhoneticsPlay american<cr>
 
 let g:phonetics_default_accent = 'american | british'
-

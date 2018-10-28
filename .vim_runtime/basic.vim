@@ -9,6 +9,9 @@ set history=500
 set autoread
 " Ignore compiled files
 set wildignore=*.o,*.pyc,*/.git
+"
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:$,precedes:«,extends:»
+set list
 
 " Search
 set ignorecase
@@ -38,7 +41,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " Show numbers of lines
-set nonumber
+set number
 
 " wrap
 set wrap
