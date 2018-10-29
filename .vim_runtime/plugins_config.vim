@@ -40,6 +40,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
 Plug 'Valloric/YouCompleteMe'
+Plug 'turbio/bracey.vim'
 
 " Zen
 Plug 'junegunn/goyo.vim'
